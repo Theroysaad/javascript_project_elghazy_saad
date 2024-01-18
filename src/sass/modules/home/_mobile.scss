@@ -1,0 +1,45 @@
+@media (max-width:426px) {
+    .sec-1{
+        background-color: rgb(225, 225, 193);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
+        .titre1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2vh;
+        }
+        .title{
+            width:300px;
+            text-align: center;
+        }
+        .t-paragraphe{
+            width:400px;
+            text-align: center;
+        }
+        .buttons{
+            align-items: center;
+            justify-content: center;
+            .book{
+                height: 6vh;
+                width: 150px;
+            }
+            .watch{
+                width: 150px;
+                .play{
+                    font-size:xx-large;
+                }
+            }
+        }
+    }
+    .forImage{
+
+        .image{
+            width:400px;
+            height: 400px;
+        }
+    }
+}

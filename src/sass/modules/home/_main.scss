@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sec-1 {
+    background-color: #eeeeee;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+    .titre1 {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .title {
+        width: 30vw;
+    }
+
+    .t-paragraphe {
+        width: 30vw;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 5vw;
+        padding-inline: 10px;
+
+        .book {
+            color: aliceblue;
+            height: 6vh;
+            width: 10vw;
+            border-radius: 20px;
+            background-color: (#ce1212);
+            border: none;
+        }
+
+        .watch {
+            border: none;
+            height: 6vh;
+            width: 10vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: transparent;
+
+            .play {
+                font-size: xx-large;
+            }
+        }
+    }
+}
