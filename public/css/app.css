@@ -11965,6 +11965,117 @@ textarea.form-control-lg {
   right: 13vw;
 }
 
+.sec-3 {
+  background-color: #eeeeee;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.sec-3 .red {
+  width: 25%;
+  height: 90%;
+  background-color: #ce1212;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  box-shadow: rgba(255, 117, 117, 0.35) 0px 5px 15px;
+}
+.sec-3 .red:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(255, 117, 117, 0.35) 0px 5px 15px;
+}
+.sec-3 .red .learnMore {
+  color: aliceblue;
+  height: 6vh;
+  width: 10vw;
+  border-radius: 20px;
+  background-color: #dd5a5a;
+  border: none;
+}
+.sec-3 .light1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 10px;
+  gap: 0vh;
+  gap: 2vw;
+  width: 20%;
+  height: 80%;
+  background: #ffffff;
+  box-shadow: rgba(255, 117, 117, 0.35) 0px 5px 15px;
+}
+.sec-3 .light1:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(255, 117, 117, 0.35) 0px 5px 15px;
+}
+.sec-3 .light1 .icon1 {
+  height: 10vh;
+  width: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ce1212;
+  background: #fae7e7;
+  border-radius: 50%;
+}
+.sec-3 .light2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 10px;
+  gap: 0vh;
+  gap: 2vw;
+  width: 20%;
+  height: 80%;
+  background: #ffffff;
+  box-shadow: rgba(255, 117, 117, 0.35) 0px 5px 15px;
+}
+.sec-3 .light2 .icon1 {
+  height: 10vh;
+  width: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ce1212;
+  background: #fae7e7;
+  border-radius: 50%;
+}
+.sec-3 .light2:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(255, 117, 117, 0.35) 0px 5px 15px;
+}
+.sec-3 .light3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 10px;
+  gap: 0vh;
+  gap: 2vw;
+  width: 20%;
+  height: 80%;
+  background: #ffffff;
+  box-shadow: rgba(255, 117, 117, 0.35) 0px 5px 15px;
+}
+.sec-3 .light3 .icon1 {
+  height: 10vh;
+  width: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ce1212;
+  background: #fae7e7;
+  border-radius: 50%;
+}
+.sec-3 .light3:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(255, 117, 117, 0.35) 0px 5px 15px;
+}
+
 @media (max-width: 426px) {
   .sec-1 {
     background-color: rgb(225, 225, 193);
