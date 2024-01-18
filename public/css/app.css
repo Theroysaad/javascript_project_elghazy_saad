@@ -12076,6 +12076,25 @@ textarea.form-control-lg {
   box-shadow: rgba(255, 117, 117, 0.35) 0px 5px 15px;
 }
 
+.sec-4 {
+  color: #eeeeee;
+  height: 50vh;
+  background-image: url(../../../../public/images/img/stats-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.sec-4 div {
+  background: rgba(0, 0, 0, 0.5411764706);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-4 h5, .sec-4 .h5 {
+  opacity: 50%;
+}
+
 @media (max-width: 426px) {
   .sec-1 {
     background-color: rgb(225, 225, 193);

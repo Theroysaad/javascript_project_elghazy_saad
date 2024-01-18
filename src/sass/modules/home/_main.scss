@@ -237,4 +237,29 @@
         }
     }
 }
+// *
 
+.sec-4 {
+    color: #eeeeee;
+    height: 50vh;
+    background-image: url(../../../../public/images/img/stats-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    div {
+        background: #0000008a;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        // z-index: inherit;
+    }
+
+    h5 {
+        opacity: 50%;
+    }
+}
