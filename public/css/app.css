@@ -12118,6 +12118,10 @@ textarea.form-control-lg {
   height: 300px;
 }
 
+.sec-7 {
+  background-color: #f7f7f7;
+}
+
 @media (max-width: 426px) {
   .sec-1 {
     background-color: rgb(225, 225, 193);
