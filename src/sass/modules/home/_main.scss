@@ -294,4 +294,86 @@
 .sec-7 {
     background-color: #f7f7f7;
 }
+// *
+.sec-8 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+    gap: 2vh;
 
+    .sec-8-container {
+        background: #f7f7f7;
+        width: 90%;
+        height: 80%;
+        display: flex;
+        justify-content: space-between;
+
+        .bg-image-2 {
+            width: 30%;
+            height: 100%;
+            background-image: url(../../../../public/images/img/reservation.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .your-information {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+            height: 100%;
+
+            .input1 {
+                width: 90%;
+                height: 10%;
+                display: flex;
+                justify-content: space-evenly;
+
+                input {
+                    width: 30%;
+                    height: 70%;
+                }
+            }
+
+            .input2 {
+                width: 90%;
+                height: 10%;
+                display: flex;
+                justify-content: space-evenly;
+
+                input {
+                    width: 30%;
+                    height: 70%;
+
+                }
+            }
+
+            .textarea {
+                width: 90%;
+                height: 40%;
+                padding-inline: 1.3vw;
+
+                textarea {
+                    height: 100%;
+                }
+            }
+
+            .btn-information {
+                padding-top: 1vh;
+
+                button {
+                    color: aliceblue;
+                    height: 6vh;
+                    width: 15vw;
+                    border-radius: 20px;
+                    background-color: (#ce1212);
+                    border: none;
+                }
+            }
+        }
+    }
+}
