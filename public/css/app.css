@@ -11910,6 +11910,61 @@ textarea.form-control-lg {
   font-size: xx-large;
 }
 
+.sec-2 {
+  height: 115vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.container .right-div {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .right-div .up {
+  height: 40%;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  gap: 1vh;
+}
+.container .right-div .down {
+  background-image: url(../../../../public/images/img/about-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30vw;
+  height: 40%;
+}
+.container .bg-image {
+  background-image: url(../../../../public/images/img/about\(1\).jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 60%;
+  height: 90%;
+  display: flex;
+  position: relative;
+}
+.container .bg-image .white {
+  height: 13vh;
+  width: 10vw;
+  padding: 10px;
+  position: absolute;
+  bottom: 5vh;
+  right: 13vw;
+}
+
 @media (max-width: 426px) {
   .sec-1 {
     background-color: rgb(225, 225, 193);
