@@ -12128,6 +12128,9 @@ textarea.form-control-lg {
 .sec-7 {
   background-color: #f7f7f7;
 }
+.sec-7 .card {
+  width: 30%;
+}
 
 .sec-8 {
   height: 100vh;
@@ -12478,6 +12481,124 @@ textarea.form-control-lg {
     height: fit-content;
     width: fit-content;
     padding: 20px;
+  }
+  .sec-4 {
+    color: #eeeeee;
+    height: 120vh;
+    background-image: url(../../../../public/images/img/stats-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .sec-4 div {
+    background: rgba(0, 0, 0, 0.5411764706);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec-5 {
+    height: 500vh;
+    background-color: #ffffff;
+  }
+  .first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .menuContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+  }
+  .menuImages {
+    width: 300px;
+    height: 300px;
+  }
+  .sec-7 {
+    background-color: #f7f7f7;
+  }
+  .sec-7 .cards1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    gap: 5vh;
+  }
+  .sec-7 .cards1 .card {
+    width: 100%;
+  }
+  .sec-8 {
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+  }
+  .sec-8 .sec-8-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec-8 .sec-8-container .bg-image-2 {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../../../../public/images/img/reservation.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .sec-8 .sec-8-container .your-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 150vh;
+    gap: 0;
+  }
+  .sec-8 .sec-8-container .your-information .input1 {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    gap: 2vh;
+  }
+  .sec-8 .sec-8-container .your-information .input1 input {
+    width: 90%;
+  }
+  .sec-8 .sec-8-container .your-information .input2 {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    gap: 2vh;
+  }
+  .sec-8 .sec-8-container .your-information .input2 input {
+    width: 90%;
+  }
+  .sec-8 .sec-8-container .your-information .textarea {
+    width: 90%;
+  }
+  .sec-8 .sec-8-container .your-information .textarea textarea {
+    height: 100%;
+  }
+  .sec-8 .sec-8-container .your-information .btn-information {
+    width: 50%;
+  }
+  .sec-8 .sec-8-container .your-information .btn-information button {
+    color: aliceblue;
+    height: 6vh;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #ce1212;
+    border: none;
   }
 }
 

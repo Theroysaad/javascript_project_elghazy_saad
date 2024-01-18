@@ -133,14 +133,10 @@
             height: fit-content;
             width: fit-content;
             padding: 20px;
-
         }
     }
-
     .light2 {
-
         width: 90%;
-
             .icon1 {
                 height: fit-content;
                 width: fit-content;
@@ -156,6 +152,138 @@
         }
     }
 }
+
+.sec-4 {
+    color: #eeeeee;
+    height: 120vh;
+    background-image: url(../../../../public/images/img/stats-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    div {
+        background: #0000008a;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}   
+
+.sec-5 {
+    height: 500vh;
+    background-color: #ffffff;
+
+}
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+}
+.menuImages {
+    width: 300px;
+    height: 300px;
+}
+
+.sec-7 {
+    background-color: #f7f7f7;
+    .cards1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        gap: 5vh;
+        .card{
+            width: 100%;
+        }
+    }
+}
+
+.sec-8 {
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+    .sec-8-container {
+        display: flex;
+        flex-direction: column;
+
+        .bg-image-2 {
+            width: 100%;
+            height: 70vh;
+            background-image: url(../../../../public/images/img/reservation.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .your-information {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 150vh;
+            gap: 0;
+            // gap: 2vh;
+            .input1 {
+                width: 100%;
+                height: 10vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0;
+                gap: 2vh;
+                input {
+                    width: 90%;
+                    // height: 70%;
+                }
+            }
+
+            .input2 {
+                width: 100%;
+                height: 20vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+                gap: 2vh;
+                input {
+                    width: 90%;
+                }
+            }
+            .textarea {
+                width: 90%;
+                // height: 40%;
+                // padding-inline: 1.3vw;
+                textarea {
+                    height: 100%;
+                }
+            }
+            .btn-information {
+                width: 50%;
+                button {
+                    color: aliceblue;
+                    height: 6vh;
+                    width: 100%;
+                    border-radius: 20px;
+                    background-color: (#ce1212);
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
 
 
 
