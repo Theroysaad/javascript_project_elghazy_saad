@@ -12193,6 +12193,147 @@ textarea.form-control-lg {
   border: none;
 }
 
+.sec-10 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;
+}
+.sec-10 .fourDivs {
+  width: 80%;
+  height: 50vh;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: auto auto;
+}
+.sec-10 .fourDivs .adress {
+  height: 15vh;
+  width: 35vw;
+  background: #f7f7f7;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.sec-10 .fourDivs .adress .adress-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ce1212;
+  color: #eeeeee;
+  padding: 20px;
+}
+.sec-10 .fourDivs .email {
+  height: 15vh;
+  width: 40vw;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  padding-left: 1vw;
+  background: #f7f7f7;
+}
+.sec-10 .fourDivs .email .email-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ce1212;
+  color: #eeeeee;
+  padding: 20px;
+}
+.sec-10 .fourDivs .call {
+  height: 15vh;
+  width: 35vw;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  padding-left: 1vw;
+  background: #f7f7f7;
+}
+.sec-10 .fourDivs .call .call-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ce1212;
+  color: #eeeeee;
+  padding: 20px;
+}
+.sec-10 .fourDivs .opening {
+  height: 15vh;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  padding-left: 1vw;
+  background: #f7f7f7;
+}
+.sec-10 .fourDivs .opening .opening-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ce1212;
+  color: #eeeeee;
+  padding: 20px;
+}
+.sec-10 .contactUS {
+  height: 60vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sec-10 .contactUS .subjectParent {
+  display: flex;
+  justify-content: space-between;
+}
+.sec-10 .contactUS .subject {
+  width: 100%;
+  height: 8vh;
+}
+.sec-10 .contactUS .name {
+  width: 49%;
+  height: 8vh;
+}
+.sec-10 .contactUS .email {
+  width: 49%;
+  height: 8vh;
+}
+.sec-10 .contactUS .message {
+  height: 25vh;
+}
+.sec-10 .contactUS .message textarea {
+  height: 100%;
+}
+.sec-10 .contactUS .btn-message {
+  padding-top: 1vh;
+}
+.sec-10 .contactUS .btn-message button {
+  color: aliceblue;
+  height: 6vh;
+  width: 15vw;
+  border-radius: 20px;
+  background-color: #ce1212;
+  border: none;
+}
+
 @media (max-width: 426px) {
   .sec-1 {
     background-color: rgb(225, 225, 193);

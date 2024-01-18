@@ -377,3 +377,158 @@
         }
     }
 }
+
+// *
+
+.sec-10 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    .fourDivs {
+        width: 80%;
+        height: 50vh;
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        // padding-inline: 2vw;
+        grid-template-columns: auto auto;
+        .adress {
+            height: 15vh;
+            width: 35vw;
+            background: #f7f7f7;
+            text-align: start;
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+            .adress-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: (#ce1212);
+                color: #eeeeee;
+                padding: 20px;
+            }
+        }
+
+        .email {
+            height: 15vh;
+            width: 40vw;
+            text-align: start;
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+            padding-left: 1vw;
+            background: #f7f7f7;
+
+            .email-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: (#ce1212);
+                color: #eeeeee;
+                padding: 20px;
+            }
+        }
+
+        .call {
+            height: 15vh;
+            width: 35vw;
+            text-align: start;
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+            padding-left: 1vw;
+            background: #f7f7f7;
+
+            .call-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: (#ce1212);
+                color: #eeeeee;
+                padding: 20px;
+            }
+        }
+
+        .opening {
+            height: 15vh;
+            // width: 35vw;
+            text-align: start;
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+            padding-left: 1vw;
+            background: #f7f7f7;
+
+            .opening-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: (#ce1212);
+                color: #eeeeee;
+                padding: 20px;
+            }
+        }
+
+    }
+
+    .contactUS{
+        height: 60vh;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vh;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        .subjectParent{
+            display: flex;
+            justify-content: space-between;
+        }
+        .subject{
+            width: 100%;
+            height: 8vh;
+        }
+        .name{
+            width: 49%;
+            height: 8vh;
+        }
+        .email{
+            width: 49%;
+            height: 8vh;
+        }
+
+        .message{
+            height: 25vh;
+            textarea{
+                height: 100%;
+            }
+        }
+        .btn-message {
+            padding-top: 1vh;
+
+            button {
+                color: aliceblue;
+                height: 6vh;
+                width: 15vw;
+                border-radius: 20px;
+                background-color: (#ce1212);
+                border: none;
+            }
+        }
+    }
+}
