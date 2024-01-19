@@ -6,9 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 
 <body>
+    
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!! -->
+    <div id="modal-1" class="myModal d-none">
+        <div  class="top-of-modal">
+            <div class="header-modal border-light border-bottom w-100 d-flex ">
+                <button class="loging-button w-50 border-0">LOGING</button>
+                <button  data-SAAD-target="modal-2" class="signin-button w-50 border-0">SIGNIN</button>
+            </div>
+            <div class="down-of-modal d-flex flex-column justify-content-around align-items-center">
+                <h1>LOGING</h1>
+                <div class="loging-input "> 
+                    <input type="email" class="input-log" placeholder="email">
+                    <input type="text" class="input-log" placeholder="password">
+                </div>
+                <div>
+                    <button class="btn close ">Close</button>
+                    <button class="btn close log">LOG IN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-2" class="myModal d-none">
+        <div  class="top-of-modal">
+            <div class="header-modal border-light border-bottom w-100 d-flex ">
+                <button class="loging-button2 w-50 border-0">LOGING</button>
+                <button class="signin-button2 w-50 border-0">SIGNIN</button>
+            </div>
+            <div class="down-of-modal d-flex flex-column justify-content-around align-items-center">
+                <h1>Signing</h1>
+                <div class="loging-input "> 
+                    <input type="email" class="input-log" placeholder="email">
+                    <input type="text" class="input-log" placeholder="password">
+                </div>
+                <div>
+                    <button class="btn close ">Close</button>
+                    <button class="btn close log">LOG IN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!! -->
+
+
+    <nav class="navbar navbar-expand-lg bg-white p-lg-3 ">
+        <div class="container align-items-start ">
+            <a class="text-decoration-none text-black" href=""><h1>LionsResto <span class="text-danger">.</span></h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" nav-links d-lg-flex justify-content-lg-center w-75" id="navbarSupportedContent">
+                <ul class="navbar-nav  d-flex justify-content-between w-75 ">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" role="button" 
+                            aria-expanded="false">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">404 Error</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Menu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link ">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link ">Chefs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link ">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">DropDawn</a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link ">Contact</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <button class="btn btn-danger" data-SAAD-target="modal-1">Loging OR Signing</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- ************* -->
+
+    <div class="back">
+        <a href="#" id="title" class="top"><i class="scroll fa-solid fa-circle-arrow-up"
+                style="color: #ff0000;"></i></span></a>
+    </div>
 
     <section class="sec-1">
         <div class="titre">
@@ -27,6 +141,7 @@
         </div>
         <div class="forImage">
             <img class="image" src="./public/images/img/menu/menu-item-1(1).png" alt="">
+
         </div>
     </section>
 
@@ -72,7 +187,11 @@
                         possimus? Debitis, possimus.
                     </div>
                 </div>
-                <div class="down"></div>
+                <div class="down">
+                    <div class="playVideo ">
+                        <i class="fa-solid fa-circle-play fa-6x" style="color: #ff0000;"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -161,8 +280,7 @@
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
-                    type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false"
-                    disabled>Dinner</button>
+                    type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Dinner</button>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -178,31 +296,31 @@
                         <h3 class="text-danger">$5,95</h3>
                     </div>
                     <div class="text-center">
-                        <img src="./public/images/img/menu/menu-item-1(1).png" alt="" class="menuImages">
+                        <img src="./public/images/img/menu/menu-item-2(1).png" alt="" class="menuImages">
                         <h3>Magnam Tiste</h3>
                         Lorem,ipsum,dolor,sit,amet
                         <h3 class="text-danger">$5,95</h3>
                     </div>
                     <div class="text-center">
-                        <img src="./public/images/img/menu/menu-item-1(1).png" alt="" class="menuImages">
+                        <img src="./public/images/img/menu/menu-item-3(1).png" alt="" class="menuImages">
                         <h3>Magnam Tiste</h3>
                         Lorem,ipsum,dolor,sit,amet
                         <h3 class="text-danger">$5,95</h3>
                     </div>
                     <div class="text-center">
-                        <img src="./public/images/img/menu/menu-item-1(1).png" alt="" class="menuImages">
+                        <img src="./public/images/img/menu/menu-item-4(1).png" alt="" class="menuImages">
                         <h3>Magnam Tiste</h3>
                         Lorem,ipsum,dolor,sit,amet
                         <h3 class="text-danger">$5,95</h3>
                     </div>
                     <div class="text-center">
-                        <img src="./public/images/img/menu/menu-item-1(1).png" alt="" class="menuImages">
+                        <img src="./public/images/img/menu/menu-item-5(1).png" alt="" class="menuImages">
                         <h3>Magnam Tiste</h3>
                         Lorem,ipsum,dolor,sit,amet
                         <h3 class="text-danger">$5,95</h3>
                     </div>
                     <div class="text-center">
-                        <img src="./public/images/img/menu/menu-item-1(1).png" alt="" class="menuImages">
+                        <img src="./public/images/img/menu/menu-item-6(1).png" alt="" class="menuImages">
                         <h3>Magnam Tiste</h3>
                         Lorem,ipsum,dolor,sit,amet
                         <h3 class="text-danger">$5,95</h3>
@@ -221,31 +339,31 @@
                         <h3 class="text-danger">$5,95</h3>
                     </div>
                     <div class="text-center">
-                        <img src="./public/images/img/menu/menu-item-1(1).png" alt="" class="menuImages">
+                        <img src="./public/images/img/menu/menu-item-2(1).png" alt="" class="menuImages">
                         <h3>Magnam Tiste</h3>
                         Lorem,ipsum,dolor,sit,amet
                         <h3 class="text-danger">$5,95</h3>
                     </div>
                     <div class="text-center">
-                        <img src="./public/images/img/menu/menu-item-1(1).png" alt="" class="menuImages">
+                        <img src="./public/images/img/menu/menu-item-3(1).png" alt="" class="menuImages">
                         <h3>Magnam Tiste</h3>
                         Lorem,ipsum,dolor,sit,amet
                         <h3 class="text-danger">$5,95</h3>
                     </div>
                     <div class="text-center">
-                        <img src="./public/images/img/menu/menu-item-1(1).png" alt="" class="menuImages">
+                        <img src="./public/images/img/menu/menu-item-4(1).png" alt="" class="menuImages">
                         <h3>Magnam Tiste</h3>
                         Lorem,ipsum,dolor,sit,amet
                         <h3 class="text-danger">$5,95</h3>
                     </div>
                     <div class="text-center">
-                        <img src="./public/images/img/menu/menu-item-1(1).png" alt="" class="menuImages">
+                        <img src="./public/images/img/menu/menu-item-5(1).png" alt="" class="menuImages">
                         <h3>Magnam Tiste</h3>
                         Lorem,ipsum,dolor,sit,amet
                         <h3 class="text-danger">$5,95</h3>
                     </div>
                     <div class="text-center">
-                        <img src="./public/images/img/menu/menu-item-1(1).png" alt="" class="menuImages">
+                        <img src="./public/images/img/menu/menu-item-6(1).png" alt="" class="menuImages">
                         <h3>Magnam Tiste</h3>
                         Lorem,ipsum,dolor,sit,amet
                         <h3 class="text-danger">$5,95</h3>
@@ -264,31 +382,31 @@
                         <h3 class="text-danger">$5,95</h3>
                     </div>
                     <div class="text-center">
-                        <img src="./public/images/img/menu/menu-item-1(1).png" alt="" class="menuImages">
+                        <img src="./public/images/img/menu/menu-item-2(1).png" alt="" class="menuImages">
                         <h3>Magnam Tiste</h3>
                         Lorem,ipsum,dolor,sit,amet
                         <h3 class="text-danger">$5,95</h3>
                     </div>
                     <div class="text-center">
-                        <img src="./public/images/img/menu/menu-item-1(1).png" alt="" class="menuImages">
+                        <img src="./public/images/img/menu/menu-item-3(1).png" alt="" class="menuImages">
                         <h3>Magnam Tiste</h3>
                         Lorem,ipsum,dolor,sit,amet
                         <h3 class="text-danger">$5,95</h3>
                     </div>
                     <div class="text-center">
-                        <img src="./public/images/img/menu/menu-item-1(1).png" alt="" class="menuImages">
+                        <img src="./public/images/img/menu/menu-item-4(1).png" alt="" class="menuImages">
                         <h3>Magnam Tiste</h3>
                         Lorem,ipsum,dolor,sit,amet
                         <h3 class="text-danger">$5,95</h3>
                     </div>
                     <div class="text-center">
-                        <img src="./public/images/img/menu/menu-item-1(1).png" alt="" class="menuImages">
+                        <img src="./public/images/img/menu/menu-item-5(1).png" alt="" class="menuImages">
                         <h3>Magnam Tiste</h3>
                         Lorem,ipsum,dolor,sit,amet
                         <h3 class="text-danger">$5,95</h3>
                     </div>
                     <div class="text-center">
-                        <img src="./public/images/img/menu/menu-item-1(1).png" alt="" class="menuImages">
+                        <img src="./public/images/img/menu/menu-item-6(1).png" alt="" class="menuImages">
                         <h3>Magnam Tiste</h3>
                         Lorem,ipsum,dolor,sit,amet
                         <h3 class="text-danger">$5,95</h3>
@@ -297,6 +415,46 @@
             </div>
             <div class="first tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
                 tabindex="0">
+                Menu
+                <h1 class="text-danger">STarters</h1>
+                <div class="menuContainer">
+                    <div class="text-center">
+                        <img src="./public/images/img/menu/menu-item-1(1).png" alt="" class="menuImages">
+                        <h3>Magnam Tiste</h3>
+                        Lorem,ipsum,dolor,sit,amet
+                        <h3 class="text-danger">$5,95</h3>
+                    </div>
+                    <div class="text-center">
+                        <img src="./public/images/img/menu/menu-item-2(1).png" alt="" class="menuImages">
+                        <h3>Magnam Tiste</h3>
+                        Lorem,ipsum,dolor,sit,amet
+                        <h3 class="text-danger">$5,95</h3>
+                    </div>
+                    <div class="text-center">
+                        <img src="./public/images/img/menu/menu-item-3(1).png" alt="" class="menuImages">
+                        <h3>Magnam Tiste</h3>
+                        Lorem,ipsum,dolor,sit,amet
+                        <h3 class="text-danger">$5,95</h3>
+                    </div>
+                    <div class="text-center">
+                        <img src="./public/images/img/menu/menu-item-4(1).png" alt="" class="menuImages">
+                        <h3>Magnam Tiste</h3>
+                        Lorem,ipsum,dolor,sit,amet
+                        <h3 class="text-danger">$5,95</h3>
+                    </div>
+                    <div class="text-center">
+                        <img src="./public/images/img/menu/menu-item-5(1).png" alt="" class="menuImages">
+                        <h3>Magnam Tiste</h3>
+                        Lorem,ipsum,dolor,sit,amet
+                        <h3 class="text-danger">$5,95</h3>
+                    </div>
+                    <div class="text-center">
+                        <img src="./public/images/img/menu/menu-item-6(1).png" alt="" class="menuImages">
+                        <h3>Magnam Tiste</h3>
+                        Lorem,ipsum,dolor,sit,amet
+                        <h3 class="text-danger">$5,95</h3>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -305,19 +463,139 @@
     <!--  -->
 
 
-<section class="sec-6">
+    <section class="sec-6">
 
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
 
-</section>
+            <div class="carousel-inner">
 
+                <div class="carousel-item active ci1 ">
+
+                    <h2>WHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span></h2>
+                    <div class="container-ci1">
+                        <div class="left-1">
+                            <p><span><i class="fa-solid fa-quote-left" style="color: #ff0000;"></i></span>Lorem, ipsum
+                                dolor sit amet consectetur adipisicing elit. Sint sapiente voluptate nesciunt autem,
+                                iure dolor aspernatur corrupti quaerat dolorem? Eos ex voluptas, molestias porro totam
+                                itaque officiis tenetur<span><i class="fa-solid fa-quote-right"
+                                        style="color: #ff0000;"></i></span></p>
+                            <h4>Sara Wilson</h4>
+                            <p>designer</p>
+                            <i class="fa-solid fa-star" style="color: #fff700;"></i><i class="fa-solid fa-star"
+                                style="color: #fff700;"></i><i class="fa-solid fa-star" style="color: #fff700;"></i><i
+                                class="fa-solid fa-star" style="color: #fff700;"></i><i class="fa-solid fa-star"
+                                style="color: #fff700;"></i>
+                        </div>
+                        <div class="profile-1"></div>
+                    </div>
+                </div>
+
+                <div class="carousel-item ci2">
+                <h2>wHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span></h2>
+                    <div class="container-ci2">
+                        <div class="left-2">
+                            <p><span><i class="fa-solid fa-quote-left" style="color: #ff0000;"></i></span>Lorem, ipsum
+                                dolor sit amet consectetur adipisicing elit. Sint sapiente voluptate nesciunt autem,
+                                iure dolor aspernatur corrupti quaerat dolorem? Eos ex voluptas, molestias porro totam
+                                itaque officiis tenetur<span><i class="fa-solid fa-quote-right"
+                                        style="color: #ff0000;"></i></span></p>
+                            <h4>Sara Wilson</h4>
+                            <p>designer</p>
+                            <i class="fa-solid fa-star" style="color: #fff700;"></i><i class="fa-solid fa-star"
+                                style="color: #fff700;"></i><i class="fa-solid fa-star" style="color: #fff700;"></i><i
+                                class="fa-solid fa-star" style="color: #fff700;"></i><i class="fa-solid fa-star"
+                                style="color: #fff700;"></i>
+                        </div>  
+                        <div class="profile-2"></div>
+                    </div>
+                </div>
+
+                <div class="carousel-item ci3">
+                    <h2>wHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span></h2>
+                    <div class="container-ci3">
+                        <div class="left-3">
+                            <p><span><i class="fa-solid fa-quote-left" style="color: #ff0000;"></i></span>Lorem, ipsum
+                                dolor sit amet consectetur adipisicing elit. Sint sapiente voluptate nesciunt autem,
+                                iure dolor aspernatur corrupti quaerat dolorem? Eos ex voluptas, molestias porro totam
+                                itaque officiis tenetur<span><i class="fa-solid fa-quote-right"
+                                        style="color: #ff0000;"></i></span></p>
+                            <h4>Sara Wilson</h4>
+                            <p>designer</p>
+                            <i class="fa-solid fa-star" style="color: #fff700;"></i><i class="fa-solid fa-star"
+                                style="color: #fff700;"></i><i class="fa-solid fa-star" style="color: #fff700;"></i><i
+                                class="fa-solid fa-star" style="color: #fff700;"></i><i class="fa-solid fa-star"
+                                style="color: #fff700;"></i>
+                        </div>
+                        <div class="profile-3"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
 
     <!--  -->
+    <section class="sec-7 text-center p-5 center">
+        Events
+        <h3>SHARE <span class="text-danger">YOUR MOMENTS</span> IN OUR RESTAURANT</h3>
+        <div class="carousel-2-container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-2-inner">
+                    <div class="carousel-2-item active">
+                        <img src="./public/images/img/events-1(1).jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-2-item">
+                        <img src="./public/images/img/events-2(1).jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-2-item">
+                        <img src="./public/images/img/events-3(1).jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
 
-    <section class="sec-7 text-center p-5">
+    <section class="sec-8 text-center p-5">
         chefs
-        <h3>OUR<span class="text-danger">PROFfESIONAL</span>CHEFS</h3>
+        <h3>OUR <span class="text-danger">PROFFESIONAL</span> CHEFS</h3>
         <div class="cards1 d-flex justify-content-lg-around pt-5">
-            <div class="card" >
+            <div class="card">
                 <img src="./public/images/img/chefs/chefs-1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h3>Walter White</h3>
@@ -328,7 +606,7 @@
                 </div>
             </div>
             <!-- * -->
-            <div class="card" >
+            <div class="card">
                 <img src="./public/images/img/chefs/chefs-2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h3>Walter White</h3>
@@ -354,10 +632,10 @@
 
     <!--  -->
 
-    <section class="sec-8">
+    <section class="sec-9">
         BOOK A TABLE
         <h2>BOOK <span class="text-danger">YOUR STAY</span> WITH US</h2>
-        <div class="sec-8-container">
+        <div class="sec-9-container">
             <div class="bg-image-2"></div>
             <div class="your-information">
                 <div class="input1">
@@ -384,7 +662,7 @@
 
     <!--  -->
 
-    <section class="sec-10 text-center pt-lg-5 ">
+    <section class="sec-11 text-center pt-lg-5 ">
         Contact
         <h2>Need Help ? <span class="text-danger">Contact US</span></h2>
         <iframe
@@ -482,10 +760,56 @@
 
 
 
+    <footer class="text-white">
+        <div class="infos d-lg-flex justify-content-lg-around p-lg-5 ">
+            <div class="info">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <h5>Address</h5>
+                    <p>!108 Adam Street New York, NY 535022-US</p>
+                </div>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <h5>Reservations</h5>
+                    <p><span>Phone:</span>+212 687654567</p>
+                    <p><span>Phone:</span>info@example.com</p>
+                </div>
+            </div>
+            <div class="info">
+                <i class="fa-regular fa-clock"></i>
+                <div>
+                    <h5>Opening Hours</h5>
+                    <p><span>Mon-Sat: 11AM</span>-23PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-plus"></i>
+                <div>
+                    <h5>Follow Us</h5>
+                    <div class="icons">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright d-lg-flex justify-content-lg-center w-100">
+            <p>&copy; Copyright <span>Yummy.</span> All Rights Reserved Designed by <span>BootstrapMade</span></p>
+        </div>
+    </footer>
 
 
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./public/js/app.js"></script>
 </body>
 

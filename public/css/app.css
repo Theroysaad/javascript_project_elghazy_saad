@@ -11865,6 +11865,109 @@ textarea.form-control-lg {
   padding: 0;
 }
 
+nav .navbar-nav {
+  width: 40vw;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .container-fluid, nav .container-sm, nav .container-md, nav .container-lg, nav .container-xl, nav .container-xxl {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.down-of-modal {
+  height: 70%;
+}
+.down-of-modal .loging-input {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  width: 100%;
+}
+.down-of-modal .loging-input .input-log {
+  border-radius: 20px;
+  width: 80%;
+  height: 5vh;
+  padding: 2vh;
+}
+
+.log {
+  width: 10vw;
+  height: 5vh;
+  border-radius: 10px;
+}
+
+.signin-button2 {
+  background-color: #ce1212;
+  color: #e1e1e1;
+}
+
+.loging-button {
+  background-color: #ce1212;
+  color: #e1e1e1;
+}
+
+.close {
+  width: 10vw;
+  height: 5vh;
+  background-color: #eeeeee;
+  border: solid;
+  border-radius: 10px;
+}
+
+.header-modal {
+  height: 10vh;
+  border-radius: 20px;
+}
+
+.top-of-modal {
+  height: 70vh;
+  width: 30vw;
+  border-radius: 20px;
+  background-color: #e1e1e1;
+  box-shadow: rgba(255, 0, 0, 0.826) 0px 5px 15px;
+}
+
+.myModal {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4549019608);
+}
+
+.test {
+  height: 200vh;
+}
+
+.back {
+  position: fixed;
+  bottom: 2vh;
+  right: 4vw;
+  z-index: 10;
+}
+.back .top {
+  height: 100px;
+  width: 100px;
+  bottom: 40px;
+  right: 0px;
+}
+.back .top .scroll {
+  font-size: 50px;
+}
+
 .sec-1 {
   background-color: #eeeeee;
   height: 90vh;
@@ -11943,8 +12046,33 @@ textarea.form-control-lg {
   background-image: url(../../../../public/images/img/about-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30vw;
   height: 40%;
+}
+.container .right-div .down .playVideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  animation: pulse 0.2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.826);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 110, 110, 0.826);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(78, 0, 0, 0.826);
+  }
 }
 .container .bg-image {
   background-image: url(../../../../public/images/img/about\(1\).jpg);
@@ -12118,21 +12246,147 @@ textarea.form-control-lg {
 }
 
 .sec-6 {
-  height: 90vh;
-  background: #000;
+  height: 70vh;
+  background-color: #eeeeee;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.sec-6 #carouselExampleIndicators {
+  width: 100%;
+  height: 100%;
+}
+.sec-6 #carouselExampleIndicators .carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+.sec-6 #carouselExampleIndicators .carousel-inner .ci1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+}
+.sec-6 #carouselExampleIndicators .carousel-inner .ci1 .container-ci1 {
+  height: 40%;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-left: solid #ce1212;
+}
+.sec-6 #carouselExampleIndicators .carousel-inner .ci1 .container-ci1 .left-1 {
+  width: 70%;
+}
+.sec-6 #carouselExampleIndicators .carousel-inner .ci1 .container-ci1 .profile-1 {
+  height: 70%;
+  width: 15%;
+  border: solid #ffffff;
+  background: #000;
+  background-image: url(../../../../public/images/img/testimonials/testimonials-1\(1\).jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+.sec-6 #carouselExampleIndicators .carousel-inner .ci2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+}
+.sec-6 #carouselExampleIndicators .carousel-inner .ci2 .container-ci2 {
+  height: 40%;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-left: solid #ce1212;
+}
+.sec-6 #carouselExampleIndicators .carousel-inner .ci2 .container-ci2 .left-2 {
+  width: 70%;
+}
+.sec-6 #carouselExampleIndicators .carousel-inner .ci2 .container-ci2 .profile-2 {
+  height: 70%;
+  width: 15%;
+  border: solid #ffffff;
+  background: #000;
+  background-image: url(../../../../public/images/img/testimonials/testimonials-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+.sec-6 #carouselExampleIndicators .carousel-inner .ci3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+}
+.sec-6 #carouselExampleIndicators .carousel-inner .ci3 .container-ci3 {
+  height: 40%;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-left: solid #ce1212;
+}
+.sec-6 #carouselExampleIndicators .carousel-inner .ci3 .container-ci3 .left-3 {
+  width: 70%;
+}
+.sec-6 #carouselExampleIndicators .carousel-inner .ci3 .container-ci3 .profile-3 {
+  height: 70%;
+  width: 15%;
+  border: solid #ffffff;
+  background: #000;
+  background-image: url(../../../../public/images/img/testimonials/testimonials-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
 
 .sec-7 {
-  background-color: #f7f7f7;
+  height: 80vh;
+  background: white;
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
-.sec-7 .card {
-  width: 30%;
+
+.carousel-2-inner {
+  display: flex;
+}
+
+.carousel-2-item {
+  margin-right: 0;
+  flex: 0 0 33.333333%;
+  display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .sec-8 {
+  background-color: #f7f7f7;
+}
+.sec-8 .card {
+  width: 30%;
+}
+
+.sec-9 {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -12141,21 +12395,21 @@ textarea.form-control-lg {
   padding-top: 5vh;
   gap: 2vh;
 }
-.sec-8 .sec-8-container {
+.sec-9 .sec-9-container {
   background: #f7f7f7;
   width: 90%;
   height: 80%;
   display: flex;
   justify-content: space-between;
 }
-.sec-8 .sec-8-container .bg-image-2 {
+.sec-9 .sec-9-container .bg-image-2 {
   width: 30%;
   height: 100%;
   background-image: url(../../../../public/images/img/reservation.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.sec-8 .sec-8-container .your-information {
+.sec-9 .sec-9-container .your-information {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12163,38 +12417,38 @@ textarea.form-control-lg {
   width: 70%;
   height: 100%;
 }
-.sec-8 .sec-8-container .your-information .input1 {
+.sec-9 .sec-9-container .your-information .input1 {
   width: 90%;
   height: 10%;
   display: flex;
   justify-content: space-evenly;
 }
-.sec-8 .sec-8-container .your-information .input1 input {
+.sec-9 .sec-9-container .your-information .input1 input {
   width: 30%;
   height: 70%;
 }
-.sec-8 .sec-8-container .your-information .input2 {
+.sec-9 .sec-9-container .your-information .input2 {
   width: 90%;
   height: 10%;
   display: flex;
   justify-content: space-evenly;
 }
-.sec-8 .sec-8-container .your-information .input2 input {
+.sec-9 .sec-9-container .your-information .input2 input {
   width: 30%;
   height: 70%;
 }
-.sec-8 .sec-8-container .your-information .textarea {
+.sec-9 .sec-9-container .your-information .textarea {
   width: 90%;
   height: 40%;
   padding-inline: 1.3vw;
 }
-.sec-8 .sec-8-container .your-information .textarea textarea {
+.sec-9 .sec-9-container .your-information .textarea textarea {
   height: 100%;
 }
-.sec-8 .sec-8-container .your-information .btn-information {
+.sec-9 .sec-9-container .your-information .btn-information {
   padding-top: 1vh;
 }
-.sec-8 .sec-8-container .your-information .btn-information button {
+.sec-9 .sec-9-container .your-information .btn-information button {
   color: aliceblue;
   height: 6vh;
   width: 15vw;
@@ -12203,14 +12457,14 @@ textarea.form-control-lg {
   border: none;
 }
 
-.sec-10 {
+.sec-11 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 200vh;
 }
-.sec-10 .fourDivs {
+.sec-11 .fourDivs {
   width: 80%;
   height: 50vh;
   display: grid;
@@ -12218,7 +12472,7 @@ textarea.form-control-lg {
   align-items: center;
   grid-template-columns: auto auto;
 }
-.sec-10 .fourDivs .adress {
+.sec-11 .fourDivs .adress {
   height: 15vh;
   width: 35vw;
   background: #f7f7f7;
@@ -12227,7 +12481,7 @@ textarea.form-control-lg {
   align-items: center;
   gap: 1vw;
 }
-.sec-10 .fourDivs .adress .adress-icon {
+.sec-11 .fourDivs .adress .adress-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12238,7 +12492,7 @@ textarea.form-control-lg {
   color: #eeeeee;
   padding: 20px;
 }
-.sec-10 .fourDivs .email {
+.sec-11 .fourDivs .email {
   height: 15vh;
   width: 40vw;
   text-align: start;
@@ -12248,7 +12502,7 @@ textarea.form-control-lg {
   padding-left: 1vw;
   background: #f7f7f7;
 }
-.sec-10 .fourDivs .email .email-icon {
+.sec-11 .fourDivs .email .email-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12259,7 +12513,7 @@ textarea.form-control-lg {
   color: #eeeeee;
   padding: 20px;
 }
-.sec-10 .fourDivs .call {
+.sec-11 .fourDivs .call {
   height: 15vh;
   width: 35vw;
   text-align: start;
@@ -12269,7 +12523,7 @@ textarea.form-control-lg {
   padding-left: 1vw;
   background: #f7f7f7;
 }
-.sec-10 .fourDivs .call .call-icon {
+.sec-11 .fourDivs .call .call-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12280,7 +12534,7 @@ textarea.form-control-lg {
   color: #eeeeee;
   padding: 20px;
 }
-.sec-10 .fourDivs .opening {
+.sec-11 .fourDivs .opening {
   height: 15vh;
   text-align: start;
   display: flex;
@@ -12289,7 +12543,7 @@ textarea.form-control-lg {
   padding-left: 1vw;
   background: #f7f7f7;
 }
-.sec-10 .fourDivs .opening .opening-icon {
+.sec-11 .fourDivs .opening .opening-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12300,7 +12554,7 @@ textarea.form-control-lg {
   color: #eeeeee;
   padding: 20px;
 }
-.sec-10 .contactUS {
+.sec-11 .contactUS {
   height: 60vh;
   width: 80%;
   display: flex;
@@ -12310,38 +12564,76 @@ textarea.form-control-lg {
   gap: 3vh;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.sec-10 .contactUS .subjectParent {
+.sec-11 .contactUS .subjectParent {
   display: flex;
   justify-content: space-between;
 }
-.sec-10 .contactUS .subject {
+.sec-11 .contactUS .subject {
   width: 100%;
   height: 8vh;
 }
-.sec-10 .contactUS .name {
+.sec-11 .contactUS .name {
   width: 49%;
   height: 8vh;
 }
-.sec-10 .contactUS .email {
+.sec-11 .contactUS .email {
   width: 49%;
   height: 8vh;
 }
-.sec-10 .contactUS .message {
+.sec-11 .contactUS .message {
   height: 25vh;
 }
-.sec-10 .contactUS .message textarea {
+.sec-11 .contactUS .message textarea {
   height: 100%;
 }
-.sec-10 .contactUS .btn-message {
+.sec-11 .contactUS .btn-message {
   padding-top: 1vh;
 }
-.sec-10 .contactUS .btn-message button {
+.sec-11 .contactUS .btn-message button {
   color: aliceblue;
   height: 6vh;
   width: 15vw;
   border-radius: 20px;
   background-color: #ce1212;
   border: none;
+}
+
+footer {
+  height: 40vh;
+  background-color: rgba(0, 0, 0, 0.795);
+}
+footer .infos .info {
+  display: flex;
+  width: 20%;
+}
+footer .infos .info i {
+  font-size: 24px;
+  padding-top: 3px;
+}
+footer .infos .info div {
+  padding-left: 16px;
+}
+footer .infos .info div p {
+  margin: 0;
+}
+footer .infos .info:last-child div .icons {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+}
+footer .infos .info:last-child div .icons i {
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 8px;
+}
+footer .copyright {
+  border-top: 1px solid rgba(129, 129, 129, 0.774);
+}
+footer .copyright p {
+  padding-top: 16px;
+  width: 20vw;
+  text-align: center;
 }
 
 @media (max-width: 426px) {
@@ -12517,20 +12809,20 @@ textarea.form-control-lg {
     width: 300px;
     height: 300px;
   }
-  .sec-7 {
+  .sec-8 {
     background-color: #f7f7f7;
   }
-  .sec-7 .cards1 {
+  .sec-8 .cards1 {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 0;
     gap: 5vh;
   }
-  .sec-7 .cards1 .card {
+  .sec-8 .cards1 .card {
     width: 100%;
   }
-  .sec-8 {
+  .sec-9 {
     height: 300vh;
     display: flex;
     flex-direction: column;
@@ -12538,18 +12830,18 @@ textarea.form-control-lg {
     align-items: center;
     padding-top: 5vh;
   }
-  .sec-8 .sec-8-container {
+  .sec-9 .sec-9-container {
     display: flex;
     flex-direction: column;
   }
-  .sec-8 .sec-8-container .bg-image-2 {
+  .sec-9 .sec-9-container .bg-image-2 {
     width: 100%;
     height: 70vh;
     background-image: url(../../../../public/images/img/reservation.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .sec-8 .sec-8-container .your-information {
+  .sec-9 .sec-9-container .your-information {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12558,7 +12850,7 @@ textarea.form-control-lg {
     height: 150vh;
     gap: 0;
   }
-  .sec-8 .sec-8-container .your-information .input1 {
+  .sec-9 .sec-9-container .your-information .input1 {
     width: 100%;
     height: 10vh;
     display: flex;
@@ -12568,10 +12860,10 @@ textarea.form-control-lg {
     gap: 0;
     gap: 2vh;
   }
-  .sec-8 .sec-8-container .your-information .input1 input {
+  .sec-9 .sec-9-container .your-information .input1 input {
     width: 90%;
   }
-  .sec-8 .sec-8-container .your-information .input2 {
+  .sec-9 .sec-9-container .your-information .input2 {
     width: 100%;
     height: 20vh;
     display: flex;
@@ -12580,19 +12872,19 @@ textarea.form-control-lg {
     gap: 0;
     gap: 2vh;
   }
-  .sec-8 .sec-8-container .your-information .input2 input {
+  .sec-9 .sec-9-container .your-information .input2 input {
     width: 90%;
   }
-  .sec-8 .sec-8-container .your-information .textarea {
+  .sec-9 .sec-9-container .your-information .textarea {
     width: 90%;
   }
-  .sec-8 .sec-8-container .your-information .textarea textarea {
+  .sec-9 .sec-9-container .your-information .textarea textarea {
     height: 100%;
   }
-  .sec-8 .sec-8-container .your-information .btn-information {
+  .sec-9 .sec-9-container .your-information .btn-information {
     width: 50%;
   }
-  .sec-8 .sec-8-container .your-information .btn-information button {
+  .sec-9 .sec-9-container .your-information .btn-information button {
     color: aliceblue;
     height: 6vh;
     width: 100%;
@@ -12600,14 +12892,14 @@ textarea.form-control-lg {
     background-color: #ce1212;
     border: none;
   }
-  .sec-10 {
+  .sec-11 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 400vh;
   }
-  .sec-10 .fourDivs {
+  .sec-11 .fourDivs {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -12615,7 +12907,7 @@ textarea.form-control-lg {
     justify-content: space-evenly;
     align-items: center;
   }
-  .sec-10 .fourDivs .adress {
+  .sec-11 .fourDivs .adress {
     height: 15vh;
     width: 90%;
     background: #f7f7f7;
@@ -12625,7 +12917,7 @@ textarea.form-control-lg {
     align-items: center;
     gap: 1vw;
   }
-  .sec-10 .fourDivs .email {
+  .sec-11 .fourDivs .email {
     height: 15vh;
     width: 90%;
     text-align: start;
@@ -12635,7 +12927,7 @@ textarea.form-control-lg {
     gap: 1vw;
     padding-left: 1vw;
   }
-  .sec-10 .fourDivs .call {
+  .sec-11 .fourDivs .call {
     height: 15vh;
     width: 90%;
     text-align: start;
@@ -12646,10 +12938,10 @@ textarea.form-control-lg {
     gap: 0vh;
     background: #f7f7f7;
   }
-  .sec-10 .fourDivs .call .call-p {
+  .sec-11 .fourDivs .call .call-p {
     width: 55%;
   }
-  .sec-10 .fourDivs .opening {
+  .sec-11 .fourDivs .opening {
     height: 15vh;
     width: 90%;
     text-align: start;
@@ -12658,10 +12950,10 @@ textarea.form-control-lg {
     align-items: center;
     background: #f7f7f7;
   }
-  .sec-10 .fourDivs .opening .opening-p {
+  .sec-11 .fourDivs .opening .opening-p {
     width: 50%;
   }
-  .sec-10 .contactUS {
+  .sec-11 .contactUS {
     height: 80vh;
     width: 90%;
     display: flex;
@@ -12671,7 +12963,7 @@ textarea.form-control-lg {
     gap: 3vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-  .sec-10 .contactUS .subjectParent {
+  .sec-11 .contactUS .subjectParent {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -12679,35 +12971,156 @@ textarea.form-control-lg {
     gap: 0;
     gap: 2vh;
   }
-  .sec-10 .contactUS .subject {
+  .sec-11 .contactUS .subject {
     width: 100%;
     height: 8vh;
   }
-  .sec-10 .contactUS .name {
+  .sec-11 .contactUS .name {
     width: 100%;
     height: 8vh;
   }
-  .sec-10 .contactUS .email {
+  .sec-11 .contactUS .email {
     width: 100%;
     height: 8vh;
   }
-  .sec-10 .contactUS .message {
+  .sec-11 .contactUS .message {
     height: 25vh;
   }
-  .sec-10 .contactUS .message textarea {
+  .sec-11 .contactUS .message textarea {
     height: 100%;
   }
-  .sec-10 .contactUS .btn-message {
+  .sec-11 .contactUS .btn-message {
     padding-top: 1vh;
     width: 100%;
   }
-  .sec-10 .contactUS .btn-message button {
+  .sec-11 .contactUS .btn-message button {
     color: aliceblue;
     height: 6vh;
     width: 60%;
     border-radius: 20px;
     background-color: #ce1212;
     border: none;
+  }
+  .sec-6 {
+    height: 100vh;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+  }
+  .sec-6 #carouselExampleIndicators {
+    width: 100%;
+    height: 100vh;
+  }
+  .sec-6 #carouselExampleIndicators .carousel-inner .ci1 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+  }
+  .sec-6 #carouselExampleIndicators .carousel-inner .ci1 .container-ci1 {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-left: solid #ce1212;
+  }
+  .sec-6 #carouselExampleIndicators .carousel-inner .ci1 .container-ci1 .left-1 {
+    width: 100%;
+  }
+  .sec-6 #carouselExampleIndicators .carousel-inner .ci1 .container-ci1 .profile-1 {
+    border: solid #ffffff;
+    background: #000;
+    background-image: url(../../../../public/images/img/testimonials/testimonials-1\(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  .sec-6 #carouselExampleIndicators .carousel-inner .ci2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+  }
+  .sec-6 #carouselExampleIndicators .carousel-inner .ci2 .container-ci2 {
+    height: 40%;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-left: solid #ce1212;
+  }
+  .sec-6 #carouselExampleIndicators .carousel-inner .ci2 .container-ci2 .left-2 {
+    width: 70%;
+  }
+  .sec-6 #carouselExampleIndicators .carousel-inner .ci2 .container-ci2 .profile-2 {
+    height: 70%;
+    width: 15%;
+    border: solid #ffffff;
+    background: #000;
+    background-image: url(../../../../public/images/img/testimonials/testimonials-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  .sec-6 #carouselExampleIndicators .carousel-inner .ci3 {
+    width: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+  }
+  .sec-6 #carouselExampleIndicators .carousel-inner .ci3 .container-ci3 {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: solid #ce1212;
+  }
+  .sec-6 #carouselExampleIndicators .carousel-inner .ci3 .container-ci3 .left-3 {
+    width: 70%;
+  }
+  .sec-6 #carouselExampleIndicators .carousel-inner .ci3 .container-ci3 .profile-3 {
+    height: 100%;
+    width: 20%;
+    border: solid #ffffff;
+    background: #000;
+    background-image: url(../../../../public/images/img/testimonials/testimonials-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  footer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  footer .infos {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+  }
+  footer .infos .info {
+    display: flex;
+    gap: 5vh;
+    gap: 0vh;
+    width: 100%;
+    height: 70vh;
+  }
+  footer .copyright {
+    width: 100%;
+  }
+  footer .copyright p {
+    width: 100%;
   }
 }
 
